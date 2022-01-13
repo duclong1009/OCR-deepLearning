@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "train_seq2seq.py", line 51, in <module>
-    main(args)
-  File "train_seq2seq.py", line 23, in main
-    vocab = Vocab()
-NameError: name 'Vocab' is not defined
