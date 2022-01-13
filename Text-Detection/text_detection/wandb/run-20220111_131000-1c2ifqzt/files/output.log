@@ -1,0 +1,28 @@
+******************    TRAINING EPOCH 1/2000    ******************
+lr : 0.0001
+/usr/local/lib/python3.7/dist-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+epoch 1:(0/300) || time 4.35051 || loss 0.245717 || total loss 0.245717
+epoch 1:(10/300) || time 168.28270 || loss 1.133407 || total loss 7.109255
+Traceback (most recent call last):
+  File "train/train_craft.py", line 236, in <module>
+    train()
+  File "train/train_craft.py", line 152, in train
+    for index, (real_images, real_region_scores, real_affinity_scores, real_conf_mask, _) in enumerate(real_data_loader):
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/usr/local/lib/python3.7/dist-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/content/drive/MyDrive/Project_Deeplearning/project/dataloader/WordLevelDataset.py", line 43, in __getitem__
+    return self.pull_item(index)
+  File "/content/drive/MyDrive/Project_Deeplearning/project/dataloader/BaseDataset.py", line 136, in pull_item
+    image, character_bboxes, words, confidence_mask, confidences = self.load_image_gt_and_confidencemask(index)
+  File "/content/drive/MyDrive/Project_Deeplearning/project/dataloader/WordLevelDataset.py", line 237, in load_image_gt_and_confidencemask
+    expand_small_box=expand_small_box)
+  File "/content/drive/MyDrive/Project_Deeplearning/project/dataloader/WordLevelDataset.py", line 84, in inference_pursedo_bboxes
+    cv2.imwrite('test_folder/vis/word_image.png', word_image)
+KeyboardInterrupt

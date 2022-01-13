@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.4.144+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.12",
+    "heartbeatAt": "2022-01-11T13:08:42.233114",
+    "startedAt": "2022-01-11T13:08:38.786130",
+    "docker": null,
+    "gpu": "Tesla P100-PCIE-16GB",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train/train_craft.py",
+    "codePath": "train/train_craft.py",
+    "host": "280a38299bf7",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

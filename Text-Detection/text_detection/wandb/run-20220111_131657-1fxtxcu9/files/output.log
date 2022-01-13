@@ -1,0 +1,8 @@
+******************    TRAINING EPOCH 1/2000    ******************
+lr : 0.0001
+/usr/local/lib/python3.7/dist-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+epoch 1:(0/300) || running_step 0|| time 4.39704 || loss 0.491433 || total loss 0.491433
+epoch 1:(10/300) || running_step 10|| time 168.86697 || loss 2.266699 || total loss 2.758133
+epoch 1:(20/300) || running_step 20|| time 273.01492 || loss 3.151340 || total loss 5.909472
+epoch 1:(30/300) || running_step 30|| time 164.24646 || loss 3.443395 || total loss 9.352868

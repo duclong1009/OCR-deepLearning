@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<style>
+    /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.image-area {
+    border: 2px dashed rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    position: relative;
+}
+
+.image-area::before {
+    content: 'Ảnh đã nạp';
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+#my-table {
+  background: #012B39;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+}
+#my-table th {
+  border-bottom: 1px solid #364043;
+  color: #E2B842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+#my-table td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.disabled td {
+  color: #4F5F64;
+}
+#my-table tbody tr {
+  transition: background 0.25s ease;
+}
+#my-table tbody tr:hover {
+  background: #014055;
+}
+
+.column {
+  float: center;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+body {
+    min-height: 100vh;
+    background-color: #757f9a;
+    background-image: linear-gradient(147deg, #757f9a 0%, #d7dde8 100%);
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="container py-5">
+
+    <!-- For demo purpose -->
+    <header class="text-white text-center">
+        <h1 class="display-4">Phát hiện và nhận dạng chữ Tiếng việt trên ảnh ngoại cảnh</h1>
+        <p class="lead mb-0">Nhóm 3 - CTTN - CNTT - K63</p>
+        <p class="mb-5 font-weight-light">
+            <a href="https://bootstrapious.com" class="text-white">
+                <u>Github</u>
+            </a>
+        </p>
+        <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
+    </header>
+
+
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <!-- Upload image input-->
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="file">
+                <label id="upload-label" for="upload" class="font-weight-light text-muted">Chọn ảnh</label>
+                <div class="input-group-append" type="submit">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Chọn ảnh</small></label>
+                </div>
+            </div>
+
+            <!-- Uploaded image area-->
+            <p class="font-italic text-white text-center">Chọn ảnh của bạn</p>
+            <div class="image-area mt-4"><img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+            <p></p>
+            <p class="font-italic text-white text-center">Nạp ảnh</p>
+            <p></p>
+            
+            <div class="row">
+                <div class="column">
+                    <button type="submit" class="btn btn-light btn-lg btn-block" name="submit_button" value="refine"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Refine</small></button>
+                </div>
+                <div class="column">
+                    <button type="submit" class="btn btn-light btn-lg btn-block" name="submit_button" value="non-refine"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Non-refine</small></button>
+                </div>
+            </div>
+        </form>
+        <p></p>
+        <p class="font-italic text-white text-center">Kết quả</p>
+        </div>
+    </div>
+    <center>
+        <img width="auto" height="800px" src="{{url_for('static', filename=fn)}}">
+    </center>
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+        <p></p>
+        <p class="font-italic text-white text-center">Văn bản trích xuất</p>
+        <p></p>
+        <center>
+            <table id="my-table">
+                <thead>
+                    <tr>
+                        <th style="min-width:50px"><center>Số thứ tự</center></th>
+                        <th style="min-width:150px"><center>Văn bản</center></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {%for rs in result%}
+                    <tr>
+                        <td>{{rs[0]}}</td>
+                        <td>{{rs[1]}}</td>
+                    </tr>
+                {%endfor%}
+                </tbody>
+            </table>
+        </center>
+        </div>
+    </div>
+</div>
+
+<script>
+    /*  ==========================================
+    SHOW UPLOADED IMAGE
+* ========================================== */
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imageResult')
+                .attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+$(function () {
+    $('#upload').on('change', function () {
+        readURL(input);
+    });
+});
+
+/*  ==========================================
+    SHOW UPLOADED IMAGE NAME
+* ========================================== */
+var input = document.getElementById( 'upload' );
+var infoArea = document.getElementById( 'upload-label' );
+
+input.addEventListener( 'change', showFileName );
+function showFileName( event ) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = 'Tên file: ' + fileName;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+python3 -u train_seq2seq.py --name seq2seq

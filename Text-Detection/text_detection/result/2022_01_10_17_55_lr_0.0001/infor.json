@@ -1,0 +1,1 @@
+{"lr": 0.0001, "momentum": 0.9, "weight_decay": 0.0001, "gamma": 0.1, "num_workers": 32, "path_save": "result", "syn_data": "E:/bkai/Dataset/vn_syn_data_craft_weak", "pretrained": "E:/bkai/Code/project/model/pretrained/craft_mlt_25k.pth", "word_data": "E:/bkai/Dataset/Vintext", "saved": "result\\2022_01_10_17_55_lr_0.0001", "batch_size_char": 1, "batch_size_real": 1}
