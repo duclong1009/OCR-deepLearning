@@ -6,3 +6,7 @@
 | Nguyễn Phi Phúc  | 20180155   |
 | Dương Bá Tân     | 20183978   |
 
+## Train model Recognize 
+```
+python train_seq2seq.py --name test 
+```
