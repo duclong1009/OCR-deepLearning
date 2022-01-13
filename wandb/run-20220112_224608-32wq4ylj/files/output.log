@@ -1,0 +1,27 @@
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:05<00:00, 19.64it/s]
+  0%|                                                                                                                                                                                   | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_seq2seq.py", line 59, in <module>
+    main(args)
+  File "train_seq2seq.py", line 44, in main
+    y, y_pred = test(model, test_loader, device)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 27, in test
+    for i in tqdm(dataloader):
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/tqdm/std.py", line 1180, in __iter__
+    for obj in iterable:
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py", line 38, in __getitem__
+    img = Image.open(img_path).convert("RGB")
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/PIL/Image.py", line 2975, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: 'src/data/vietnamese/test_images/im1201.jpg'

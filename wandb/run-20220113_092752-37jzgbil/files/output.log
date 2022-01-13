@@ -1,0 +1,107 @@
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(17)process_image()
+-> w, h = img.size
+(Pdb)
+
+(Pdb) w
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/train_seq2seq.py(62)<module>()
+-> main(args)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/train_seq2seq.py(45)main()
+-> train_loss =train(model,train_loader,optimizer,criterion,device)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(8)train()
+-> for i in tqdm(dataloader):
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/tqdm/std.py(1108)__iter__()
+-> for obj in iterable:
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py(521)__next__()
+-> data = self._next_data()
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py(561)_next_data()
+-> data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py(49)fetch()
+-> data = [self.dataset[idx] for idx in possibly_batched_index]
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py(49)<listcomp>()
+-> data = [self.dataset[idx] for idx in possibly_batched_index]
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py(42)__getitem__()
+-> processed_img = self.processed_img(img)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py(27)processed_img()
+-> img = process_image(img, self.expected_height, self.min_width, self.max_width)
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(17)process_image()
+-> w, h = img.size
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(18)process_image()
+-> new_w, image_height = resize(w, h, image_height, image_min_width, image_max_width)
+(Pdb) w
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/train_seq2seq.py(62)<module>()
+-> main(args)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/train_seq2seq.py(45)main()
+-> train_loss =train(model,train_loader,optimizer,criterion,device)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(8)train()
+-> for i in tqdm(dataloader):
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/tqdm/std.py(1108)__iter__()
+-> for obj in iterable:
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py(521)__next__()
+-> data = self._next_data()
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py(561)_next_data()
+-> data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py(49)fetch()
+-> data = [self.dataset[idx] for idx in possibly_batched_index]
+  /home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py(49)<listcomp>()
+-> data = [self.dataset[idx] for idx in possibly_batched_index]
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py(42)__getitem__()
+-> processed_img = self.processed_img(img)
+  /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py(27)processed_img()
+-> img = process_image(img, self.expected_height, self.min_width, self.max_width)
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(18)process_image()
+-> new_w, image_height = resize(w, h, image_height, image_min_width, image_max_width)
+
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(20)process_image()
+-> img = img.resize((new_w, image_height), Image.ANTIALIAS)
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py(22)process_image()
+-> img = np.asarray(img).transpose(2,0, 1)
+(Pdb) img
+<PIL.Image.Image image mode=RGB size=70x32 at 0x7F6BBE8CE7C0>
+
+  0%|                                                                                                                                                                                 | 0/25794 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "train_seq2seq.py", line 62, in <module>
+    main(args)
+  File "train_seq2seq.py", line 45, in main
+    train_loss =train(model,train_loader,optimizer,criterion,device)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 8, in train
+    for i in tqdm(dataloader):
+  File "/home/aiotlab/anaconda3/lib/python3.8/site-packages/tqdm/std.py", line 1108, in __iter__
+    for obj in iterable:
+  File "/home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/aiotlab/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 49, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py", line 42, in __getitem__
+    processed_img = self.processed_img(img)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/loader/loader.py", line 27, in processed_img
+    img = process_image(img, self.expected_height, self.min_width, self.max_width)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py", line 22, in process_image
+    # img = np.asarray(img).transpose(2,0, 1)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/utils.py", line 22, in process_image
+    # img = np.asarray(img).transpose(2,0, 1)
+  File "/home/aiotlab/anaconda3/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/aiotlab/anaconda3/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/aiotlab/anaconda3/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/aiotlab/anaconda3/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/aiotlab/anaconda3/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/aiotlab/anaconda3/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/aiotlab/anaconda3/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/aiotlab/anaconda3/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/aiotlab/anaconda3/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+pdb.Restart

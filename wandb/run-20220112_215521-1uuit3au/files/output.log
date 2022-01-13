@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [00:31<00:00,  3.15it/s]
+
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                     | 78/100 [00:03<00:01, 21.36it/s]
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(45)eval()
+-> acc = accuracy_score(y,y_pred)
+
+(Pdb) --KeyboardInterrupt--
+
+(Pdb) run
+Traceback (most recent call last):
+  File "train_seq2seq.py", line 57, in <module>
+    project="Spatial_PM2.5",group="OCR", name=args.name,config=config)
+  File "train_seq2seq.py", line 44, in main
+    y, y_pred = test(model, train_loader, device)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 45, in eval
+    acc = accuracy_score(y,y_pred)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 45, in eval
+    acc = accuracy_score(y,y_pred)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/bdb.py", line 112, in dispatch_line
+    self.user_line(frame)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 262, in user_line
+    self.interaction(frame, None)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+pdb.Restart

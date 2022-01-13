@@ -1,1 +1,1 @@
-# OCR-deepLearning
+# OCR-prj-deeplearning
