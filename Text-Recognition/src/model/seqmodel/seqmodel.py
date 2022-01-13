@@ -133,10 +133,10 @@ class Seq2Seq(nn.Module):
         encouder: src_len x batch_size x hid_dim
         output: batch_size x 1 x vocab_size
         """
-        
+        # breakpoint()
         tgt = tgt[-1]
         hidden, encoder_outputs = memory
-        output, hidden, _ = self.decoder(tgt, hidden, encoder_outputs)
+        output, hidden, _ = self.decoder(tgt.int(), hidden, encoder_outputs)
         output = output.unsqueeze(1)
         
         return output, (hidden, encoder_outputs)

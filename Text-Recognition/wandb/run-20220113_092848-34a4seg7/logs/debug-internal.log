@@ -1,0 +1,171 @@
+2022-01-13 09:28:49,135 INFO    MainThread:46025 [internal.py:wandb_internal():87] W&B internal server running at pid: 46025, started at: 2022-01-13 09:28:49.134838
+2022-01-13 09:28:49,138 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: check_version
+2022-01-13 09:28:49,138 INFO    WriterThread:46025 [datastore.py:open_for_write():77] open: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/run-34a4seg7.wandb
+2022-01-13 09:28:49,141 DEBUG   SenderThread:46025 [sender.py:send():238] send: header
+2022-01-13 09:28:49,141 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: check_version
+2022-01-13 09:28:49,442 DEBUG   SenderThread:46025 [sender.py:send():238] send: run
+2022-01-13 09:28:49,821 INFO    SenderThread:46025 [dir_watcher.py:__init__():169] watching files in: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files
+2022-01-13 09:28:49,822 INFO    SenderThread:46025 [sender.py:_start_run_threads():825] run started: 34a4seg7 with start time 1642040928
+2022-01-13 09:28:49,833 DEBUG   SenderThread:46025 [sender.py:send():238] send: summary
+2022-01-13 09:28:49,834 INFO    SenderThread:46025 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-13 09:28:49,837 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: run_start
+2022-01-13 09:28:50,828 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-summary.json
+2022-01-13 09:28:51,736 DEBUG   HandlerThread:46025 [meta.py:__init__():40] meta init
+2022-01-13 09:28:51,736 DEBUG   HandlerThread:46025 [meta.py:__init__():54] meta init done
+2022-01-13 09:28:51,736 DEBUG   HandlerThread:46025 [meta.py:probe():214] probe
+2022-01-13 09:28:51,743 DEBUG   HandlerThread:46025 [meta.py:_setup_git():204] setup git
+2022-01-13 09:28:51,787 DEBUG   HandlerThread:46025 [meta.py:_setup_git():211] setup git done
+2022-01-13 09:28:51,788 DEBUG   HandlerThread:46025 [meta.py:_save_pip():58] save pip
+2022-01-13 09:28:51,789 DEBUG   HandlerThread:46025 [meta.py:_save_pip():72] save pip done
+2022-01-13 09:28:51,789 DEBUG   HandlerThread:46025 [meta.py:_save_conda():79] save conda
+2022-01-13 09:28:51,826 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/conda-environment.yaml
+2022-01-13 09:28:51,827 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/requirements.txt
+2022-01-13 09:28:55,828 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:29:05,834 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:29:07,834 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:29:09,696 DEBUG   HandlerThread:46025 [meta.py:_save_conda():89] save conda done
+2022-01-13 09:29:09,696 DEBUG   HandlerThread:46025 [meta.py:probe():252] probe done
+2022-01-13 09:29:09,706 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:29:09,707 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:29:09,835 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:29:09,836 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/conda-environment.yaml
+2022-01-13 09:29:09,836 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-metadata.json
+2022-01-13 09:29:09,995 DEBUG   SenderThread:46025 [sender.py:send():238] send: files
+2022-01-13 09:29:09,999 INFO    SenderThread:46025 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2022-01-13 09:29:10,721 INFO    Thread-11 :46025 [upload_job.py:push():137] Uploaded file /tmp/tmp8nauahvlwandb/24k9zb9k-wandb-metadata.json
+2022-01-13 09:29:11,836 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:29:14,847 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:29:14,848 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:29:22,501 DEBUG   SenderThread:46025 [sender.py:send():238] send: stats
+2022-01-13 09:29:30,223 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:29:30,224 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:29:45,537 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:29:45,538 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:29:55,102 DEBUG   SenderThread:46025 [sender.py:send():238] send: stats
+2022-01-13 09:30:01,014 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:30:01,014 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:30:16,359 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-13 09:30:16,359 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: stop_status
+2022-01-13 09:30:25,873 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:30:26,873 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:30:27,042 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:27,042 DEBUG   SenderThread:46025 [sender.py:send():238] send: telemetry
+2022-01-13 09:30:27,043 DEBUG   SenderThread:46025 [sender.py:send():238] send: exit
+2022-01-13 09:30:27,043 INFO    SenderThread:46025 [sender.py:send_exit():370] handling exit code: 1
+2022-01-13 09:30:27,044 INFO    SenderThread:46025 [sender.py:send_exit():372] handling runtime: 97
+2022-01-13 09:30:27,045 INFO    SenderThread:46025 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-13 09:30:27,045 INFO    SenderThread:46025 [sender.py:send_exit():382] send defer
+2022-01-13 09:30:27,046 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:27,047 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,047 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-13 09:30:27,048 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,048 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 0
+2022-01-13 09:30:27,048 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 1
+2022-01-13 09:30:27,049 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,049 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-13 09:30:27,243 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:27,243 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,244 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 1
+2022-01-13 09:30:27,245 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 2
+2022-01-13 09:30:27,245 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:27,245 DEBUG   SenderThread:46025 [sender.py:send():238] send: stats
+2022-01-13 09:30:27,247 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,247 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-13 09:30:27,247 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,248 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 2
+2022-01-13 09:30:27,248 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 3
+2022-01-13 09:30:27,248 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,248 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-13 09:30:27,249 DEBUG   SenderThread:46025 [sender.py:send():238] send: summary
+2022-01-13 09:30:27,250 INFO    SenderThread:46025 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2022-01-13 09:30:27,250 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,250 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 3
+2022-01-13 09:30:27,250 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 4
+2022-01-13 09:30:27,251 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,251 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-13 09:30:27,251 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,251 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 4
+2022-01-13 09:30:27,348 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:27,599 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 5
+2022-01-13 09:30:27,599 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:27,600 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,600 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-13 09:30:27,600 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,600 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 5
+2022-01-13 09:30:27,600 INFO    SenderThread:46025 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-13 09:30:27,702 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:27,874 INFO    Thread-8  :46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:30:27,875 INFO    SenderThread:46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-summary.json
+2022-01-13 09:30:27,875 INFO    SenderThread:46025 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/config.yaml
+2022-01-13 09:30:27,875 INFO    SenderThread:46025 [dir_watcher.py:finish():313] scan: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files
+2022-01-13 09:30:27,876 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/requirements.txt requirements.txt
+2022-01-13 09:30:27,876 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-summary.json wandb-summary.json
+2022-01-13 09:30:27,877 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log output.log
+2022-01-13 09:30:27,877 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-metadata.json wandb-metadata.json
+2022-01-13 09:30:27,883 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/conda-environment.yaml conda-environment.yaml
+2022-01-13 09:30:27,892 INFO    SenderThread:46025 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/config.yaml config.yaml
+2022-01-13 09:30:27,898 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 6
+2022-01-13 09:30:27,899 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:27,900 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:27,913 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-13 09:30:27,914 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:27,914 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 6
+2022-01-13 09:30:27,914 INFO    SenderThread:46025 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-13 09:30:28,015 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,015 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,117 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,118 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,222 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,226 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,330 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,330 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,432 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,433 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,535 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,536 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,638 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,639 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,689 INFO    Thread-12 :46025 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/requirements.txt
+2022-01-13 09:30:28,711 INFO    Thread-14 :46025 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/output.log
+2022-01-13 09:30:28,714 INFO    Thread-16 :46025 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/config.yaml
+2022-01-13 09:30:28,742 INFO    Thread-13 :46025 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/wandb-summary.json
+2022-01-13 09:30:28,743 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,743 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,846 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,847 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:28,917 INFO    Thread-15 :46025 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/files/conda-environment.yaml
+2022-01-13 09:30:28,948 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:28,949 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:29,052 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:29,052 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:29,118 INFO    Thread-7  :46025 [sender.py:transition_state():395] send defer: 7
+2022-01-13 09:30:29,119 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:29,119 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-13 09:30:29,119 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:29,119 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 7
+2022-01-13 09:30:29,154 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:29,860 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 8
+2022-01-13 09:30:29,860 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:29,861 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:29,861 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-13 09:30:29,862 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:29,862 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 8
+2022-01-13 09:30:29,862 INFO    SenderThread:46025 [sender.py:transition_state():395] send defer: 9
+2022-01-13 09:30:29,863 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: defer
+2022-01-13 09:30:29,863 DEBUG   SenderThread:46025 [sender.py:send():238] send: final
+2022-01-13 09:30:29,864 INFO    HandlerThread:46025 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-13 09:30:29,864 DEBUG   SenderThread:46025 [sender.py:send():238] send: footer
+2022-01-13 09:30:29,864 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: defer
+2022-01-13 09:30:29,864 INFO    SenderThread:46025 [sender.py:send_request_defer():391] handle sender defer: 9
+2022-01-13 09:30:29,963 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-13 09:30:29,963 DEBUG   SenderThread:46025 [sender.py:send_request():252] send_request: poll_exit
+2022-01-13 09:30:29,963 INFO    SenderThread:46025 [file_pusher.py:join():182] waiting for file pusher
+2022-01-13 09:30:30,662 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-13 09:30:30,664 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-13 09:30:30,665 DEBUG   HandlerThread:46025 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-13 09:30:30,665 INFO    HandlerThread:46025 [handler.py:finish():731] shutting down handler
+2022-01-13 09:30:30,864 INFO    WriterThread:46025 [datastore.py:close():281] close: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220113_092848-34a4seg7/run-34a4seg7.wandb
+2022-01-13 09:30:31,661 INFO    SenderThread:46025 [sender.py:finish():1091] shutting down sender
+2022-01-13 09:30:31,661 INFO    SenderThread:46025 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-13 09:30:31,662 INFO    SenderThread:46025 [file_pusher.py:join():182] waiting for file pusher
+2022-01-13 09:30:31,666 INFO    MainThread:46025 [internal.py:handle_exit():77] Internal process exited

@@ -1,0 +1,352 @@
+2022-01-12 22:46:52,060 INFO    MainThread:37569 [internal.py:wandb_internal():87] W&B internal server running at pid: 37569, started at: 2022-01-12 22:46:52.059903
+2022-01-12 22:46:52,063 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: check_version
+2022-01-12 22:46:52,063 INFO    WriterThread:37569 [datastore.py:open_for_write():77] open: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/run-89slu76x.wandb
+2022-01-12 22:46:52,066 DEBUG   SenderThread:37569 [sender.py:send():234] send: header
+2022-01-12 22:46:52,066 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: check_version
+2022-01-12 22:46:52,451 DEBUG   SenderThread:37569 [sender.py:send():234] send: run
+2022-01-12 22:46:53,017 INFO    SenderThread:37569 [dir_watcher.py:__init__():169] watching files in: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files
+2022-01-12 22:46:53,017 INFO    SenderThread:37569 [sender.py:_start_run_threads():804] run started: 89slu76x with start time 1642002411
+2022-01-12 22:46:53,017 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:46:53,018 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:46:53,020 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: run_start
+2022-01-12 22:46:53,027 DEBUG   HandlerThread:37569 [meta.py:__init__():40] meta init
+2022-01-12 22:46:53,027 DEBUG   HandlerThread:37569 [meta.py:__init__():54] meta init done
+2022-01-12 22:46:53,027 DEBUG   HandlerThread:37569 [meta.py:probe():214] probe
+2022-01-12 22:46:53,034 DEBUG   HandlerThread:37569 [meta.py:_setup_git():204] setup git
+2022-01-12 22:46:53,054 DEBUG   HandlerThread:37569 [meta.py:_setup_git():211] setup git done
+2022-01-12 22:46:53,054 DEBUG   HandlerThread:37569 [meta.py:_save_pip():58] save pip
+2022-01-12 22:46:53,055 DEBUG   HandlerThread:37569 [meta.py:_save_pip():72] save pip done
+2022-01-12 22:46:53,055 DEBUG   HandlerThread:37569 [meta.py:_save_conda():79] save conda
+2022-01-12 22:46:54,021 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/conda-environment.yaml
+2022-01-12 22:46:54,022 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/requirements.txt
+2022-01-12 22:46:54,022 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:46:59,020 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:46:59,392 DEBUG   HandlerThread:37569 [meta.py:_save_conda():89] save conda done
+2022-01-12 22:46:59,392 DEBUG   HandlerThread:37569 [meta.py:probe():252] probe done
+2022-01-12 22:46:59,398 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:46:59,399 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:46:59,758 DEBUG   SenderThread:37569 [sender.py:send():234] send: files
+2022-01-12 22:46:59,759 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-12 22:47:00,020 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/conda-environment.yaml
+2022-01-12 22:47:00,020 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_created():217] file/dir created: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-metadata.json
+2022-01-12 22:47:00,650 INFO    Thread-11 :37569 [upload_job.py:push():137] Uploaded file /tmp/tmpt5oumbotwandb/b0epj9vo-wandb-metadata.json
+2022-01-12 22:47:09,035 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:11,035 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:13,036 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:14,761 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:47:14,761 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:47:15,037 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:17,038 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:19,040 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:21,040 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:23,041 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:23,622 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:47:24,887 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:47:24,887 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:47:24,888 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:47:24,888 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:47:24,888 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:47:24,889 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:47:25,043 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:47:25,043 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:27,043 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:29,044 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:30,108 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:47:30,108 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:47:31,045 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:33,046 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:35,047 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:37,049 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:39,050 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:41,051 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:43,052 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:43,516 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:47:43,517 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:47:43,518 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:47:43,518 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:47:43,518 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:47:43,519 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:47:44,052 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:47:45,053 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:45,448 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:47:45,448 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:47:47,054 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:49,055 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:51,056 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:53,057 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:55,058 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:56,123 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:47:57,060 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:47:59,060 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:00,816 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:48:00,817 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:48:01,062 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:01,852 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:01,853 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:01,854 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:01,855 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:01,855 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:01,864 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:02,062 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:48:03,063 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:05,064 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:07,064 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:09,065 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:11,066 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:13,067 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:15,067 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:16,182 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:48:16,182 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:48:17,068 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:19,069 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:20,225 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:20,226 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:20,227 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:20,227 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:20,227 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:20,228 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:21,070 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:48:21,071 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:23,072 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:25,073 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:27,074 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:28,474 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:48:29,075 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:31,076 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:31,579 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:48:31,579 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:48:33,077 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:35,078 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:37,079 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:38,323 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:38,324 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:38,324 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:38,325 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:38,325 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:38,326 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:39,080 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:48:39,080 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:41,081 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:43,082 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:45,083 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:46,938 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:48:46,938 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:48:47,084 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:49,085 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:51,086 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:53,087 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:55,088 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:57,079 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:57,080 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:57,081 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:57,082 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:48:57,082 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:48:57,083 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:48:57,089 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:48:57,089 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:48:59,090 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:00,826 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:49:01,091 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:02,442 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:49:02,442 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:49:03,092 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:05,093 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:07,094 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:09,095 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:11,096 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:13,098 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:14,860 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:14,861 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:14,863 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:14,863 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:14,863 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:14,864 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:15,099 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:49:15,099 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:17,100 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:17,724 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:49:17,724 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:49:19,100 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:21,102 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:23,103 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:25,104 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:27,105 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:29,106 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:31,107 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:32,944 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:32,946 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:32,947 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:32,947 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:32,947 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:32,948 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:33,108 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:49:33,108 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:33,127 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:49:33,127 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:49:33,500 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:49:35,109 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:37,110 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:39,111 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:41,113 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:43,114 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:45,114 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:47,116 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:48,503 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:49:48,504 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:49:49,117 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:50,939 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:50,940 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:50,940 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:50,941 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:49:50,941 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:49:50,942 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:49:51,118 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:49:51,118 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:53,119 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:55,120 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:57,121 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:49:59,122 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:01,123 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:03,124 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:03,867 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-12 22:50:03,867 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: stop_status
+2022-01-12 22:50:05,125 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:05,619 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:50:07,126 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:08,550 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:50:08,551 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:50:08,552 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:50:08,552 DEBUG   SenderThread:37569 [sender.py:send():234] send: history
+2022-01-12 22:50:08,552 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:50:08,553 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:50:09,128 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:50:09,128 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:10,128 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:10,932 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:10,933 DEBUG   SenderThread:37569 [sender.py:send():234] send: telemetry
+2022-01-12 22:50:10,933 DEBUG   SenderThread:37569 [sender.py:send():234] send: exit
+2022-01-12 22:50:10,935 INFO    SenderThread:37569 [sender.py:send_exit():366] handling exit code: 0
+2022-01-12 22:50:10,935 INFO    SenderThread:37569 [sender.py:send_exit():368] handling runtime: 197
+2022-01-12 22:50:10,935 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:50:10,935 INFO    SenderThread:37569 [sender.py:send_exit():374] send defer
+2022-01-12 22:50:10,936 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:10,936 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:10,936 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 0
+2022-01-12 22:50:10,936 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:10,937 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 0
+2022-01-12 22:50:10,937 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 1
+2022-01-12 22:50:10,937 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:10,937 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 1
+2022-01-12 22:50:11,129 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:50:11,129 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:11,164 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:11,164 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:11,164 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 1
+2022-01-12 22:50:11,164 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 2
+2022-01-12 22:50:11,165 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:11,165 DEBUG   SenderThread:37569 [sender.py:send():234] send: stats
+2022-01-12 22:50:11,166 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:11,166 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 2
+2022-01-12 22:50:11,167 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:11,167 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 2
+2022-01-12 22:50:11,167 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 3
+2022-01-12 22:50:11,167 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:11,167 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 3
+2022-01-12 22:50:11,168 DEBUG   SenderThread:37569 [sender.py:send():234] send: summary
+2022-01-12 22:50:11,168 INFO    SenderThread:37569 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-12 22:50:11,168 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:11,168 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 3
+2022-01-12 22:50:11,169 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 4
+2022-01-12 22:50:11,169 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:11,169 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 4
+2022-01-12 22:50:11,169 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:11,169 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 4
+2022-01-12 22:50:11,268 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:11,572 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 5
+2022-01-12 22:50:11,572 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:11,573 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:11,573 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 5
+2022-01-12 22:50:11,573 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:11,574 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 5
+2022-01-12 22:50:11,574 INFO    SenderThread:37569 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-12 22:50:11,674 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,129 INFO    Thread-8  :37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:50:12,130 INFO    SenderThread:37569 [dir_watcher.py:_on_file_modified():230] file/dir modified: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/config.yaml
+2022-01-12 22:50:12,131 INFO    SenderThread:37569 [dir_watcher.py:finish():313] scan: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files
+2022-01-12 22:50:12,131 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/requirements.txt requirements.txt
+2022-01-12 22:50:12,132 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json wandb-summary.json
+2022-01-12 22:50:12,133 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log output.log
+2022-01-12 22:50:12,142 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-metadata.json wandb-metadata.json
+2022-01-12 22:50:12,142 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/conda-environment.yaml conda-environment.yaml
+2022-01-12 22:50:12,151 INFO    SenderThread:37569 [dir_watcher.py:finish():327] scan save: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/config.yaml config.yaml
+2022-01-12 22:50:12,155 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 6
+2022-01-12 22:50:12,156 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,157 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:12,158 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 6
+2022-01-12 22:50:12,173 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:12,177 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 6
+2022-01-12 22:50:12,177 INFO    SenderThread:37569 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-12 22:50:12,259 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,259 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,362 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,362 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,464 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,464 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,567 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,567 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,670 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,670 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,773 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,773 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,875 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,876 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:12,978 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:12,979 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,081 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,081 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,087 INFO    Thread-16 :37569 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/config.yaml
+2022-01-12 22:50:13,184 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,184 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,199 INFO    Thread-14 :37569 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/output.log
+2022-01-12 22:50:13,286 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,287 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,391 INFO    Thread-15 :37569 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/conda-environment.yaml
+2022-01-12 22:50:13,394 INFO    Thread-12 :37569 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/requirements.txt
+2022-01-12 22:50:13,395 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,395 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,436 INFO    Thread-13 :37569 [upload_job.py:push():137] Uploaded file /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/files/wandb-summary.json
+2022-01-12 22:50:13,498 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,498 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,601 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:13,601 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:13,637 INFO    Thread-7  :37569 [sender.py:transition_state():387] send defer: 7
+2022-01-12 22:50:13,638 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:13,639 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 7
+2022-01-12 22:50:13,639 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:13,639 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 7
+2022-01-12 22:50:13,704 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:14,373 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 8
+2022-01-12 22:50:14,374 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:14,375 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:14,375 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 8
+2022-01-12 22:50:14,376 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:14,376 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 8
+2022-01-12 22:50:14,376 INFO    SenderThread:37569 [sender.py:transition_state():387] send defer: 9
+2022-01-12 22:50:14,377 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: defer
+2022-01-12 22:50:14,378 DEBUG   SenderThread:37569 [sender.py:send():234] send: final
+2022-01-12 22:50:14,378 INFO    HandlerThread:37569 [handler.py:handle_request_defer():147] handle defer: 9
+2022-01-12 22:50:14,378 DEBUG   SenderThread:37569 [sender.py:send():234] send: footer
+2022-01-12 22:50:14,378 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: defer
+2022-01-12 22:50:14,379 INFO    SenderThread:37569 [sender.py:send_request_defer():383] handle sender defer: 9
+2022-01-12 22:50:14,477 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: poll_exit
+2022-01-12 22:50:14,477 DEBUG   SenderThread:37569 [sender.py:send_request():248] send_request: poll_exit
+2022-01-12 22:50:14,478 INFO    SenderThread:37569 [file_pusher.py:join():182] waiting for file pusher
+2022-01-12 22:50:15,177 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: get_summary
+2022-01-12 22:50:15,180 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: sampled_history
+2022-01-12 22:50:15,182 DEBUG   HandlerThread:37569 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-12 22:50:15,182 INFO    HandlerThread:37569 [handler.py:finish():731] shutting down handler
+2022-01-12 22:50:15,378 INFO    WriterThread:37569 [datastore.py:close():281] close: /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/wandb/run-20220112_224651-89slu76x/run-89slu76x.wandb
+2022-01-12 22:50:16,175 INFO    SenderThread:37569 [sender.py:finish():1070] shutting down sender
+2022-01-12 22:50:16,176 INFO    SenderThread:37569 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-12 22:50:16,176 INFO    SenderThread:37569 [file_pusher.py:join():182] waiting for file pusher
+2022-01-12 22:50:16,181 INFO    MainThread:37569 [internal.py:handle_exit():77] Internal process exited

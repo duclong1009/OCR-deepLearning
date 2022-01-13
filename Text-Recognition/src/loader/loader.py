@@ -3,8 +3,7 @@ import json
 import torch
 from PIL import Image
 import os.path as osp
-from utils.utils import resize, process_image
-from utils.Vocab import build_vocab
+from src.utils.utils import resize, process_image
 import numpy as np
 import cv2
 
@@ -13,8 +12,7 @@ class MyDataset(Dataset):
         self.expected_height = expected_height
         self.min_width = min_width
         self.max_width = max_width
-        # self.root = root
-        self.root = "D:/DLAndApplication/project/data/vietnamese_original/train_images"
+        self.root = root
         self.transform = transform
         with open("gen-data/" + label_path,'r') as f:
             self.dict_data = json.load(f)
@@ -23,15 +21,12 @@ class MyDataset(Dataset):
     def __len__(self):
         # return len(self.flist)
         return len(self.dict_data)
-        return 100
+        # return 10
 
     def processed_img(self, img):
         img = process_image(img, self.expected_height, self.min_width, self.max_width)
-        if self.transform:
-            img = self.transform(img)
-        # print(img)
-        # img = img/255
-        # print(img)
+        # breakpoint()
+        img = self.transform(img)
         return img
 
     def __getitem__(self, idx):
@@ -43,10 +38,9 @@ class MyDataset(Dataset):
         bbox = data['box']
         img,_ = self.crop_image_by_bbox(img, bbox)
         processed_img = self.processed_img(img)
-        print(type(process_image))
-        print(np.asarray(process_image).shape)
         label = data['label'].lower()
         encoded_label = self.vocab.encode(label)
+        # print(processed_img)
         sample = {"img": processed_img, "label" :np.array(encoded_label) }
         return sample
 
@@ -92,5 +86,5 @@ class MyDataset(Dataset):
         return warp_pil, M
 
 if __name__ == '__main__':
-    vocab = build_vocab()
-    train_dataset = MyDataset("train.json","src/data/vietnamese/train_images",vocab,32,8,80)
+    dataset = MyDataset(root="")
+    print(dataset[0])

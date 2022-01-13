@@ -1,0 +1,77 @@
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.23it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 10.58it/s]
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(45)eval()
+-> y= y.reshape(-1)
+(Pdb) y
+array([[  1,  42,   6,   2,   0,   0,   0,   0,   0,   0],
+       [  1, 136,  76,  60,   2,   0,   0,   0,   0,   0],
+       [  1, 172,  78,  72,  78,   2,   0,   0,   0,   0],
+       [  1, 144,  76,   8, 100,   2,   0,   0,   0,   0],
+       [  1, 146, 176,  60,  98,   2,   0,   0,   0,   0],
+       [  1,  42,  76,   2,   0,   0,   0,   0,   0,   0],
+       [  1, 144,  38, 136,   2,   0,   0,   0,   0,   0],
+       [  1,  46, 100,   6,  98,   2,   0,   0,   0,   0],
+       [  1,  42, 112,  98,  74,   2,   0,   0,   0,   0],
+       [  1,  98,  74,  76,  78,  70, 136,   2,   0,   0]])
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(46)eval()
+-> y_pred = y_pred.reshape(-1)
+(Pdb) y
+array([  1,  42,   6,   2,   0,   0,   0,   0,   0,   0,   1, 136,  76,
+        60,   2,   0,   0,   0,   0,   0,   1, 172,  78,  72,  78,   2,
+         0,   0,   0,   0,   1, 144,  76,   8, 100,   2,   0,   0,   0,
+         0,   1, 146, 176,  60,  98,   2,   0,   0,   0,   0,   1,  42,
+        76,   2,   0,   0,   0,   0,   0,   0,   1, 144,  38, 136,   2,
+         0,   0,   0,   0,   0,   1,  46, 100,   6,  98,   2,   0,   0,
+         0,   0,   1,  42, 112,  98,  74,   2,   0,   0,   0,   0,   1,
+        98,  74,  76,  78,  70, 136,   2,   0,   0])
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(47)eval()
+-> acc = accuracy_score(y,y_pred)
+
+(Pdb) y_pred
+array([ 1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0, 76,  0,  0,  0,  0,
+        0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0, 76,  0,
+        0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,
+        0, 76,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,
+        0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0,  1,  0,  0,  0,  0,
+        0,  0,  0,  0,  0,  1,  0,  0,  0,  0,  0,  0,  0,  0,  0])
+(Pdb) acc
+*** NameError: name 'acc' is not defined
+(Pdb) n
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(50)eval()
+-> return acc
+(Pdb) acc
+0.57
+(Pdb) n
+--Return--
+> /mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py(50)eval()->0.57
+-> return acc
+(Pdb)
+Traceback (most recent call last):
+  File "train_seq2seq.py", line 62, in <module>
+    main(args)
+  File "train_seq2seq.py", line 47, in main
+    acc = eval(y_pred,y)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 50, in eval
+    return acc
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/bdb.py", line 151, in dispatch_return
+    self.user_return(frame, arg)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 294, in user_return
+    self.interaction(frame, None)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 357, in interaction
+    self._cmdloop()
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 322, in _cmdloop
+    self.cmdloop()
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/cmd.py", line 138, in cmdloop
+    stop = self.onecmd(line)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 423, in onecmd
+    return cmd.Cmd.onecmd(self, line)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/cmd.py", line 217, in onecmd
+    return func(arg)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/pdb.py", line 1032, in do_run
+    raise Restart
+
+(Pdb) run

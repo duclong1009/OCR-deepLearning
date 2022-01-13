@@ -1,0 +1,28 @@
+
+  0%|                                                                                                                                                                                   | 0/807 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "train_seq2seq.py", line 62, in <module>
+    main(args)
+  File "train_seq2seq.py", line 45, in main
+    train_loss =train(model,train_loader,optimizer,criterion,device)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/utils/trainer.py", line 13, in train
+    y_pred = model(x,y)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/model/model.py", line 10, in forward
+    input = self.cnn(image)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/mnt/disk1/vaipe-longnd/OCR-prj-deeplearning/src/model/backbone/vgg.py", line 35, in forward
+    conv = self.features(x)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/aiotlab/anaconda3/envs/longvaipe/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [64, 3, 3, 3], expected input[32, 80, 3, 32] to have 3 channels, but got 80 channels instead

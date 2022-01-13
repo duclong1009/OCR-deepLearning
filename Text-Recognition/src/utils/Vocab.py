@@ -16,8 +16,13 @@ class Vocab():
         self.i2c[2] = '<eos>'
         self.i2c[3] = '*'
 
-    def encode(self, chars):
-        return [self.go] + [self.c2i[c] for c in chars] + [self.eos]
+    def encode(self, chars,length=10):
+        tmp = [self.go] + [self.c2i[c] for c in chars] + [self.eos]
+        if len(tmp) >10:
+            tmp = tmp[:10]
+        else :
+            tmp = tmp + [self.pad]*(10-len(tmp))
+        return tmp
     
     def decode(self, ids):
         first = 1 if self.go in ids else 0
@@ -36,7 +41,7 @@ class Vocab():
         return self.chars
 
 def build_vocab():
-    with open("vocab.txt","r", encoding='utf-8') as f:
+    with open("vocab.txt","r") as f:
         chars = f.read()
     vocab = Vocab(chars)
     return vocab

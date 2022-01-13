@@ -4,7 +4,7 @@ from torchvision import models
 class VGG(nn.Module):
     def __init__(self, name, ss, ks, hidden, pretrained=True, dropout=0.5):
         super(VGG, self).__init__()
-
+        
         if name == 'vgg11_bn':
             cnn = models.vgg11_bn(pretrained=pretrained)
         elif name == 'vgg19_bn':
@@ -31,7 +31,7 @@ class VGG(nn.Module):
         # breakpoint()
         # for i in self.features:
         #     x = i(x)
-        
+        # breakpoint()
         conv = self.features(x)
         # print(conv.shape)
         # breakpoint()

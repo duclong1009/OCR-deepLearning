@@ -9,7 +9,7 @@ def option():
     parser.add_argument("--enc_hid_dim",type=int,default=216)
     parser.add_argument("--dec_hid_dim",type=int,default=216)
     parser.add_argument("--dropout",type=float,default=0.3)
-    parser.add_argument("--lr",type=float,default=0.05)
+    parser.add_argument("--lr",type=float,default=0.005)
     parser.add_argument("--epoch",type=int,default=10)
     parser.add_argument("--batch_size",type=int,default=32)
     parser.add_argument("--num_workers",type=int,default=0)
